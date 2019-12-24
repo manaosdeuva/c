@@ -14,9 +14,17 @@ struct Familia{
 typedef struct Familia fam;
 
 int main(void){
+pokemon bulbasaur = {"Bulbasaur",1};
+pokemon ivysaur = {"Ivysaur",2};
+pokemon venusaur = {"Venusaur",3};
+pokemon eevee ={"Eevee",133};
+pokemon vaporeon = {"Vaporeon",134};
+pokemon jolteon = {"Jolteon",135};
   fam familia[2]={
-    {{{"Bulbasaur",1},{"Ivysaur",2},{"Venusaur",3}}},
-    {{{"Eevee",133},{"Vaporeon",134},{"Jolteon",135},{"Flareon",136},{"Espeon",196},{"Umbreon",197},{"Leafeon",470},{"Glaceon",471},{"Sylveon",700}}}    
+    {{bulbasaur,ivysaur,venusaur}},
+    {{eevee,vaporeon,jolteon,
+{"Flareon",136},{"Espeon",196},{"Umbreon",197},
+{"Leafeon",470},{"Glaceon",471},{"Sylveon",700}}}    
     };
   int i,j;
   for (j=0;j<2;j++){
